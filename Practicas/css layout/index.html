@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de CSS Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+        .layout-container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav main"
+                "footer footer";
+            grid-template-columns: 220px 1fr;
+            grid-template-rows: 80px 1fr 60px;
+            min-height: 100vh;
+            gap: 10px;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        header {
+            grid-area: header;
+            background: #1a237e;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 32px;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        nav {
+            grid-area: nav;
+            background: #3949ab;
+            color: #fff;
+            padding: 32px 16px;
+            font-size: 1.1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav li {
+            margin-bottom: 18px;
+        }
+        main {
+            grid-area: main;
+            padding: 32px;
+        }
+        main h2 {
+            color: #1a237e;
+            margin-bottom: 18px;
+        }
+        main p {
+            color: #333;
+            font-size: 1.1rem;
+        }
+        footer {
+            grid-area: footer;
+            background: #1a237e;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 700px) {
+            .layout-container {
+                grid-template-areas:
+                    "header"
+                    "nav"
+                    "main"
+                    "footer";
+                grid-template-columns: 1fr;
+                grid-template-rows: 70px 60px 1fr 50px;
+            }
+            nav {
+                padding: 12px 8px;
+                font-size: 1rem;
+            }
+            main {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout-container">
+        <header>
+            CSS Layout
+        </header>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Acerca de</li>
+                <li>Servicios</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+        <main>
+            <h2>¿Qué es un CSS Layout?</h2>
+            <p>
+                Un <strong>CSS Layout</strong> es la estructura visual de una página web creada usando CSS. Permite organizar el contenido en áreas como encabezado, navegación, contenido principal y pie de página. 
+                <br><br>
+                En este ejemplo se utiliza <b>CSS Grid</b> para distribuir las secciones de la página de manera moderna y responsiva.
+            </p>
+        </main>
+        <footer>
+            &copy; 2025 Ejemplo de CSS Layout

@@ -1,0 +1,45 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(120deg, #e00b0b 0%, #23235b 100%);
+    color: #f5d611;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+
+            }
+    .item {
+        background-color: rgb(221, 168, 168);
+        border-radius: 2px solid #000000;
+        padding: 20px;
+        text-align: center;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .item:hover {
+        background-color: #f5d611;
+        cursor: pointer;
+        color: #000000;
+        transform: scale(1.1);
+        transition: all 1s ease-in-out;
+    }
+    @media (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .item {
+        font-size: 16px;
+        padding: 12px;
+    }
+    }
+}

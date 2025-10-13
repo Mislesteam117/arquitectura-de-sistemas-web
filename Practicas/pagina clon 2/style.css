@@ -1,0 +1,86 @@
+  body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(120deg, #0a174e 0%, #23235b 100%);
+            color: #fff;
+        }
+        .navbar {
+            background: #0a174e;
+        }
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 12px;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffd700 !important;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .hero-section {
+            background: url('https://www.fcbarcelona.com/photo-resources/2023/08/16/5c6e2b1e-7e2e-4e5a-8e2e-7e2e4e5a8e2e/Camp-Nou.jpg?width=1200&height=800') center/cover no-repeat;
+            min-height: 340px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero-section::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(10, 23, 78, 0.7);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            color: #ffd700;
+            text-shadow: 0 4px 24px #222;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #f5d611;
+            margin-top: 18px;
+        }
+        .section-title {
+            color: #ffd700;
+            font-size: 2rem;
+            margin-bottom: 24px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .card {
+            background: #23235b;
+            color:#ffd700;
+            border: none;
+        }
+        .card-title {
+            color: #ffd700;
+        }
+        .list-group-item {
+            background: #23235b;
+            color: #fff;
+            border: none;
+        }
+        .player-img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px #0a174e77;
+        }
+        .btn-barca {
+            background: #ffd700;
+            color: #0a174e;
+            font-weight: 700;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .btn-barca:hover {
+            background: #e5c100;
+            color: #23235b;
+        }
+        footer {
+            background: #0a174e;
+            color: #ffd700;
+        }

@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 100px;
+    background-color: #f0f0f0;
+
+}
+h1 {
+    color: blue;
+    font-family: 'Story Script', cursive;
+    text-align: center;
+}
+h2 {
+    color: green;
+    font-family: 'Libertinus Keyboard', monospace;
+    text-align: center;
+}
+p {
+    font-family: 'Bungee', cursive;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+#Cuadro {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: white;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+.circulo {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
