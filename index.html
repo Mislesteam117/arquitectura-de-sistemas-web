@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menú • Pizzería La Vecchia</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="brand">
+        <img src="Logo.PNG" alt="logo">
+        <div>
+          <div style="font-size:1.05rem; color:#ffffff">Chulo´s Garage</div>
+          <small style="color:rgba(255, 255, 255, 0.9)">Pizzas • Empanadas • Hamburguesas • Snacks</small>
+        </div>
+      </div>
+      <div class="text-white-50"></div>
+    </div>
+  </header>
+
+  <main class="container py-4">
+    <section class="hero d-flex justify-content-between align-items-center flex-wrap">
+      <div>
+        <h2 class="m-0">Menú Digital</h2>
+        <small class="text-white-50"></small>
+      </div>
+    </section>
+
+    <!-- GRID: solo productos (imagen + precio + descripción) -->
+    <section id="menu" class="menu-grid" aria-live="polite">
+      <article class="menu-card">
+        <img src="Pizza personal.png" alt="Personal">
+        <h5>
+          Personal
+          <span class="price">$60</span>
+        </h5>
+        <p class="desc">Pizza de tamaño personal con ingredientes frescos, puedes agregar hasta 4 de nuestros ingredientes.</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="Pizza mediana.PNG" alt="Mediana">
+        <h5>
+          Mediana
+          <span class="price">$125</span>
+        </h5>
+        <p class="desc">Pizza de tamaño mediano con ingredientes frescos, puedes agregar hasta 4 de nuestros ingredientes.</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="Pizza grande.PNG" alt="Grande">
+        <h5>
+          Grande
+          <span class="price">$170</span>
+        </h5>
+        <p class="desc">Pizza de tamaño grande con ingredientes frescos, puedes agregar hasta 5 de nuestros ingredientes.</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="Bebidas.PNG" alt="Bebidas">
+        <h5>
+          Bebidas
+          <span class="price">$35</span>
+        </h5>
+        <p class="desc">•Agua fresca 1ltr  •Arizona 460ml  •Lipton 600ml</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="Hamburguesa res.PNG" alt="Hamburguesa clasica de res">
+        <h5>
+          Hamburguesa clasica de res
+          <span class="price">$120</span>
+        </h5>
+        <p class="desc">Jugosa hamburguesa de carne de res, jitomate, lechuga, cebolla, queso, chile jalapeño y aderezo de la casa. (incluye papas a la francesa)</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="Hamburguesa pollo.PNG" alt="Hamburguesa de pollo tempura">
+        <h5>
+          Hamburguesa de pollo tempura
+          <span class="price">$110</span>
+        </h5>
+        <p class="desc">Jugosa hamburguesa de pollo empanizado, jitomate, lechuga, cebolla, queso, chile jalapeño y aderezo de la casa. (incluye papas a la francesa)</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="Hamburguesa res.PNG" alt="Hamburguesa doble de res">
+        <h5>
+          Hamburguesa doble de res
+          <span class="price">$180</span>
+        </h5>
+        <p class="desc">Jugosa hamburguesa de 2 carnes de res, jitomate, lechuga, cebolla, queso, chile jalapeño y aderezo de la casa. (incluye papas a la francesa)</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="Hamburguesa pollo.PNG" alt="Hamburguesa doble de pollo tempura">
+        <h5>
+          Hamburguesa doble de pollo tempura
+          <span class="price">$170</span>
+        </h5>
+        <p class="desc">Jugosa hamburguesa de 2 carnes de pollo empanizado, jitomate, lechuga, cebolla, queso, chile jalapeño y aderezo de la casa. (incluye papas a la francesa)</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="Empanadas.PNG" alt="Empanadas">
+        <h5>
+          Empanadas
+          <span class="price">$45</span>
+        </h5>
+        <p class="desc">•Jamon c/queso •Choriqueso •Picadillo argentino •Asada •Champiñones</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="Snacks.PNG" alt="Snacks">
+        <h5>
+          Snacks
+          <span class="price">$60</span>
+        </h5>
+        <p class="desc">•Papas gajo •Papas a la francesa •Nuggets 10pzs •Dedos de queso 5pzs</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="Boneless.PNG" alt="Boneless 10 piezas">
+        <h5>
+          Boneless 10 piezas
+          <span class="price">$115</span>
+        </h5>
+        <p class="desc">Deliciosos boneless de pollo, bañados en una de nuestras salsas: • BBQ • Buffalo</p>
+      </article>
+
+      <article class="menu-card">
+        <img src="Alitas.PNG" alt="Alitas 10 piezas">
+        <h5>
+          Alitas 10 piezas
+          <span class="price">$110</span>
+        </h5>
+        <p class="desc">Deliciosas alitas de pollo, bañadas en una de nuestras salsas: • BBQ • Buffalo</p>
+      </article>
+    </section>
+
+    <footer>
+      <small style="color:rgba(0, 0, 0, 0.95)"><strong>Chulo´s Garage</strong> • Calle del Llano #201 Lomas del Sol • Tel: 477-580-0690</small>
+    </footer>
+  </main>
+
+</body>
+</html>

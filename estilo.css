@@ -1,0 +1,71 @@
+ :root{
+      --bg-1: #ffe600;
+      --bg-2: #ff9d00;
+      --bg-3: #ffd100;
+      --card: #ffffff;
+      --muted: #432222;
+      --accent: #c62828;
+      --shadow: 0 8px 30px rgba(255, 255, 255, 0.12);
+    }
+
+    body{
+      margin:0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 50%, var(--bg-3) 100%);
+      color: #ffffff;
+    }
+
+    .site-header{
+      background: rgba(0, 0, 0, 0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: .9rem 0;
+    }
+    .brand { display:flex; align-items:center; gap:.75rem; font-weight:700; color:#ffffff; }
+    .brand img{ width:44px; height:44px; object-fit:contain; border-radius:6px; background:rgba(0, 0, 0, 0.533); padding:4px; }
+
+    main.container{ max-width:1100px;
+      color: #ffffff;
+    }
+
+    .hero{
+      background: linear-gradient(90deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      padding:1rem;
+      border-radius:.6rem;
+      margin: .75rem 0;
+      color: #ffffff;
+    }
+
+    .menu-grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+      gap:1rem;
+      margin-top:1rem;
+    }
+    .menu-card{
+      background: var(--card);
+      border-radius:12px;
+      padding: .6rem;
+      box-shadow: var(--shadow);
+      display:flex;
+      flex-direction:column;
+      height:100%;
+      transition: transform .18s ease;
+    }
+    .menu-card:hover { transform: translateY(-6px); }
+    .menu-card img{
+      width:100%;
+      height:150px;
+      object-fit:cover;
+      border-radius:8px;
+      margin-bottom:.5rem;
+    }
+    .menu-card h5{ margin:0 0 .25rem 0; font-size:1.02rem; color:var(--accent); display:flex; justify-content:space-between; align-items:center; gap:.5rem; }
+    .menu-card .desc{ color:var(--muted); font-size:.95rem; margin-bottom:.6rem; flex:1; text-align:left; }
+    .price { font-weight:700; color:#c43a00; }
+
+    footer { margin-top:1.25rem; color:#000000; text-align:center; padding:1rem 0; opacity:.95; }
+
+    @media (max-width:700px){
+      .menu-card img{ height:140px; }
+      .hero h2{ font-size:1.05rem; }
+    }
